@@ -333,7 +333,7 @@ color: #FFFFFF;
 
 
 						<div class="links-page-btn-pic">
-							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/80457714_182386869483881_8958032434862356527_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=7BsJvbJlbT4AX-_0rRj&oh=34df5dcc3e86eea0a0644cd8f11cabaf&oe=5E26C999" alt="">
+							<center><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-15/e35/80457714_182386869483881_8958032434862356527_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=105&_nc_ohc=7BsJvbJlbT4AX-_0rRj&oh=1c86d541341e55e440af826eff6dcbb4&oe=5E281B19" alt="">
 							</img></center>
 						</div>
 
@@ -393,6 +393,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
